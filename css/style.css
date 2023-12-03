@@ -1,0 +1,43 @@
+*{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+}
+
+.navbar-brand, .navbar-nav a {
+    color: white !important;
+}
+
+.hero-section {
+    background: url('../assets/hero-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.about-section {
+    padding: 80px 0;
+}
+
+.order-section, .contact-section {
+    padding: 80px 0;
+}
+
+.footer-section {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons {
+    /* font-size: 24px; */
+    margin: 0 10px;
+    color: white;
+}
