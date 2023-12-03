@@ -22,8 +22,8 @@ function updateSelectedItems(item, quantity) {
         } else {
             const li = document.createElement('li');
             li.setAttribute('data-item', item);
-            li.innerHTML = `${itemName} x ${quantity} - $${(itemPrice * quantity).toFixed(2)} 
-                        <span class="item-price">($${itemPrice.toFixed(2)} each)</span>`;
+            li.innerHTML = `${itemName} x ${quantity} - &#8377;${(itemPrice * quantity).toFixed(2)} 
+                        <span class="item-price">(&#8377;${itemPrice.toFixed(2)} each)</span>`;
             selectedItemsList.appendChild(li);
         }
     } else {

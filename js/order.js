@@ -56,7 +56,7 @@ let cart = [];
 
         cart.forEach(item => {
             const li = document.createElement('li');
-            li.innerHTML = `${item.name} - $${item.price.toFixed(2)}`;
+            li.innerHTML = `${item.name} - &#8377;${item.price.toFixed(2)}`;
             selectedItemsList.appendChild(li);
         });
 
@@ -66,7 +66,7 @@ let cart = [];
     function updateTotalAmount() {
         const totalAmountElement = document.getElementById('totalAmount');
         const totalAmount = cart.reduce((acc, item) => acc + item.price, 0).toFixed(2);
-        totalAmountElement.innerText = `Total: $${totalAmount}`;
+        totalAmountElement.innerHTML = `Total: &#8377; ${totalAmount}`;
     }
 
     function confirmOrder() {
